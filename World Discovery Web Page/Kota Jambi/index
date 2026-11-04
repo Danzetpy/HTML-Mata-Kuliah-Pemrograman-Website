@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jelajahi Peta Satelit Sub-Daerah Jambi</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .map-container {
+            margin-top: 10px;
+            display: inline-block;
+            border: 3px solid #4CAF50;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #000;
+            max-width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        area {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jelajahi Sub-Daerah Provinsi Jambi &#x1F30D</h1> 
+    <p>Klik salah satu lokasi sub-daerah pada peta satelit di bawah ini untuk melihat detail geografisnya.</p>
+    
+    <button id="discoverLocation">Deteksi Lokasi Saya</button>
+
+    <div class="map-container">
+        <!-- Peta Satelit Jambi sesuai file Anda -->
+        <img src="maps jambi.png" usemap="#image-map" alt="Peta Satelit Jambi">
+        
+        <map name="image-map">
+            <!-- WILAYAH BARAT (KERINCI & SEKITARNYA) -->
+            <area target="" alt="Sungai Penuh" title="Sungai Penuh" id="sungai-penuh" coords="110,610,185,640" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Siulakmukai" title="Siulakmukai" id="siulakmukai" coords="95,570,170,595" shape="rect" href="javascript:void(0);">
+
+            <!-- WILAYAH TENGAH-BARAT (MERANGIN & SEKITARNYA) -->
+            <area target="" alt="Bangko" title="Bangko" id="bangko" coords="260,625,320,650" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Pamenang" title="Pamenang" id="pamenang" coords="395,645,465,670" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Bedaro" title="Bedaro" id="bedaro" coords="265,360,320,385" shape="rect" href="javascript:void(0);">
+
+            <!-- WILAYAH TENGAH (BATANGHARI & SEKITARNYA) -->
+            <area target="" alt="Muara Bulian" title="Muara Bulian" id="muara-bulian" coords="475,425,565,450" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Tempino-Ketjil" title="Tempino-Ketjil" id="tempino-ketjil" coords="635,480,735,510" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Betung" title="Betung" id="betung" coords="580,530,635,555" shape="rect" href="javascript:void(0);">
+
+            <!-- WILAYAH PUSAT -->
+            <area target="" alt="Jambi (Pusat Kota)" title="Jambi (Pusat Kota)" id="jambi-kota" coords="670,400,725,430" shape="rect" href="javascript:void(0);">
+
+            <!-- WILAYAH UTARA & PESISIR TIMUR (TANJUNG JABUNG & SEKITARNYA) -->
+            <area target="" alt="Kuala Tungkal" title="Kuala Tungkal" id="kuala-tungkal" coords="635,0,730,25" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Tebingtinggi" title="Tebingtinggi" id="tebingtinggi" coords="535,95,620,120" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Merlung" title="Merlung" id="merlung" coords="525,225,585,250" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Mendaha" title="Mendaha" id="mendaha" coords="660,105,725,130" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Nipahpandjang" title="Nipahpandjang" id="nipahpandjang" coords="800,120,910,145" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Rantaurasau" title="Rantaurasau" id="rantaurasau" coords="810,185,895,210" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Lagan Simpang" title="Lagan Simpang" id="lagan-simpang" coords="710,180,800,230" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Londerang" title="Londerang" id="londerang" coords="740,275,820,300" shape="rect" href="javascript:void(0);">
+
+            <!-- WILAYAH SELATAN (SAROLANGUN & SEKITARNYA) -->
+            <area target="" alt="Lidung" title="Lidung" id="lidung" coords="455,720,505,745" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Pelawan" title="Pelawan" id="pelawan" coords="440,775,500,800" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Surulangun" title="Surulangun" id="surulangun" coords="455,895,535,920" shape="rect" href="javascript:void(0);">
+
+            <!-- KAWASAN KONSERVASI & WILAYAH PERBATASAN -->
+            <area target="" alt="Taman Nasional Bukit Tigapuluh" title="Taman Nasional Bukit Tigapuluh" id="tn-bukit-tigapuluh" coords="305,10,440,140" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Sitiung" title="Sitiung" id="sitiung" coords="175,100,225,125" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Sungaidareh" title="Sungaidareh" id="sungaidareh" coords="35,75,120,100" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Abai" title="Abai" id="abai" coords="105,260,145,285" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Muara Labuh" title="Muara Labuh" id="muara-labuh" coords="30,345,125,370" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Indrapura" title="Indrapura" id="indrapura" coords="0,610,65,635" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Tapan" title="Tapan" id="tapan" coords="35,665,80,690" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Lubukpinang" title="Lubukpinang" id="lubukpinang" coords="55,800,150,825" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Mukomuko" title="Mukomuko" id="mukomuko" coords="55,880,140,905" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Keluang" title="Keluang" id="keluang" coords="665,920,730,945" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Letang" title="Letang" id="letang" coords="775,920,825,945" shape="rect" href="javascript:void(0);">
+            <area target="" alt="Babat" title="Babat" id="babat" coords="775,970,830,995" shape="rect" href="javascript:void(0);">
+        </map>
+    </div>
+
+<!-- Library otomatis agar koordinat image map menyesuaikan ukuran layar secara penuh -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  imageMapResize();
+
+  // Database lengkap per sub-daerah berdasarkan peta satelit maps jambi_4.png
+  const jambiSubMapInfo = {
+    // Wilayah Barat
+    'sungai-penuh': {
+      region: 'Sungai Penuh (Kota & Pusat Kerinci)',
+      category: 'Wilayah Barat',
+      river: 'Sungai Batang Merangin & Danau Kerinci',
+      mountain: 'Gunung Kerinci (3.805 mdpl)',
+      landmarks: 'Kebun Teh Kayu Aro, Danau Kaco, TNKS'
+    },
+    'siulakmukai': {
+      region: 'Siulakmukai (Kecamatan di Kerinci)[cite: 6]',
+      category: 'Wilayah Barat',
+      river: 'Aliran Sungai Hulu Kerinci',
+      mountain: 'Lembah Gunung Kerinci',
+      landmarks: 'Kawasan Wisata Kawah & Sumber Air Panas Siulak'
+    },
+
+    // Wilayah Tengah-Barat
+    'bangko': {
+      region: 'Bangko (Pusat Kabupaten Merangin)[cite: 6]',
+      category: 'Wilayah Tengah-Barat',
+      river: 'Sungai Batang Merangin & Batang Tembesi',
+      mountain: 'Gunung Masurai',
+      landmarks: 'Geopark Merangin (Fosil Purba), Jam Gadang Bangko'
+    },
+    'pamenang': {
+      region: 'Pamenang (Kabupaten Merangin)[cite: 6]',
+      category: 'Wilayah Tengah-Barat',
+      river: 'Aliran Sungai Batang Merangin',
+      mountain: 'Dataran Rendah Berbukit',
+      landmarks: 'Pasar Tradisional Pamenang & Agrowisata Buah'
+    },
+    'bedaro': {
+      region: 'Bedaro (Wilayah Tebo/Bungo)[cite: 6]',
+      category: 'Wilayah Tengah-Barat',
+      river: 'Sungai Batang Tebo',
+      mountain: 'Perbukitan Barisan Tengah',
+      landmarks: 'Kawasan Perkebunan Rakyat'
+    },
+
+    // Wilayah Tengah
+    'muara-bulian': {
+      region: 'Muara Bulian (Pusat Kabupaten Batanghari)[cite: 6]',
+      category: 'Wilayah Tengah',
+      river: 'Daerah Aliran Utama Sungai Batanghari',
+      mountain: 'Perbukitan Rendah Batanghari',
+      landmarks: 'Taman Hutan Raya Sultan Thaha, Hutan Bulian'
+    },
+    'tempino-ketjil': {
+      region: 'Tempino-Ketjil (Muaro Jambi/Batanghari)[cite: 6]',
+      category: 'Wilayah Tengah',
+      river: 'Anak Sungai Batanghari',
+      mountain: 'Dataran Aluvial',
+      landmarks: 'Sejarah Pertambangan Minyak Bumi Pertama Jambi'
+    },
+    'betung': {
+      region: 'Betung (Wilayah Batanghari)[cite: 6]',
+      category: 'Wilayah Tengah',
+      river: 'Sungai Batanghari Hilir',
+      mountain: 'Dataran Rendah Perkebunan',
+      landmarks: 'Desa Konservasi Lingkungan'
+    },
+
+    // Wilayah Pusat
+    'jambi-kota': {
+      region: 'Jambi (Pusat Ibu Kota Provinsi)[cite: 6]',
+      category: 'Wilayah Pusat',
+      river: 'Sungai Batanghari',
+      mountain: 'Dataran Perkotaan',
+      landmarks: 'Jembatan Gentala Arasy, Tugu Keris Siginjai'
+    },
+
+    // Wilayah Utara & Pesisir Timur
+    'kuala-tungkal': {
+      region: 'Kuala Tungkal (Pusat Tanjab Barat)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Muara Sungai Pengabuan',
+      mountain: 'Dataran Rendah & Pesisir Pantai',
+      landmarks: 'Pelabuhan Roro, Hutan Mangrove Tungkal'
+    },
+    'tebingtinggi': {
+      region: 'Tebingtinggi (Tanjab Barat)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Sungai Pengabuan Hulu',
+      mountain: 'Dataran Gambut & Sawit',
+      landmarks: 'Kawasan Industri Perkebunan'
+    },
+    'merlung': {
+      region: 'Merlung (Tanjab Barat)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Anak Sungai Pengabuan',
+      mountain: 'Perbukitan Pesisir',
+      landmarks: 'Jalur Lintas Timur Sumatra'
+    },
+    'mendaha': {
+      region: 'Mendaha (Tanjab Barat/Timur)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Muara Pesisir',
+      mountain: 'Lahan Rawa Gambut',
+      landmarks: 'Desa Nelayan Pesisir'
+    },
+    'nipahpandjang': {
+      region: 'Nipahpandjang (Tanjab Timur)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Muara Hilir Sungai Batanghari',
+      mountain: 'Pesisir Pantai Timur Sumatra',
+      landmarks: 'Wisata Bahari & Kawasan Nelayan Tangkap'
+    },
+    'rantaurasau': {
+      region: 'Rantaurasau (Tanjab Timur)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Kanal Pesisir',
+      mountain: 'Rawa Pantai',
+      landmarks: 'Kawasan Transmigrasi Pertanian Pasang Surut'
+    },
+    'lagan-simpang': {
+      region: 'Lagan Simpang (Tanjab Timur)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Sungai Lagan',
+      mountain: 'Dataran Rendah Gambut',
+      landmarks: 'Cagar Alam Gambut'
+    },
+    'londerang': {
+      region: 'Londerang (Tanjab Timur)[cite: 6]',
+      category: 'Wilayah Utara & Pesisir Timur',
+      river: 'Anak Sungai Batanghari Hilir',
+      mountain: 'Hutan Rawa Gambut',
+      landmarks: 'Hutan Lindung Gambut Londerang'
+    },
+
+    // Wilayah Selatan
+    'lidung': {
+      region: 'Lidung (Sarolangun)[cite: 6]',
+      category: 'Wilayah Selatan',
+      river: 'Sungai Batang Tembesi',
+      mountain: 'Perbukitan Barisan Selatan',
+      landmarks: 'Kawasan Adat & Perkebunan'
+    },
+    'pelawan': {
+      region: 'Pelawan (Sarolangun)[cite: 6]',
+      category: 'Wilayah Selatan',
+      river: 'Sungai Batang Asai',
+      mountain: 'Dataran Berbukit',
+      landmarks: 'Desa Wisata Pelawan'
+    },
+    'surulangun': {
+      region: 'Surulangun (Rawas/Sarolangun)[cite: 6]',
+      category: 'Wilayah Selatan',
+      river: 'Sungai Rawas & Tembesi',
+      mountain: 'Kaki Bukit Barisan',
+      landmarks: 'Perbatasan Jambi - Sumsel & Wisata Air Panas'
+    },
+
+    // Kawasan Konservasi & Perbatasan
+    'tn-bukit-tigapuluh': {
+      region: 'Taman Nasional Bukit Tigapuluh[cite: 6]',
+      category: 'Kawasan Konservasi',
+      river: 'Hulu Sungai Gangsal',
+      mountain: 'Perbukitan Bukit Tigapuluh',
+      landmarks: 'Habitat Orangutan, Harimau Sumatra, & Suku Anak Dalam'
+    },
+    'sitiung': {
+      region: 'Sitiung (Perbatasan Sumbar-Jambi)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Batang Hari Hulu',
+      mountain: 'Dataran Rendah Pertanian',
+      landmarks: 'Kawasan Irigasi & Perkebunan'
+    },
+    'sungaidareh': {
+      region: 'Sungaidareh (Dharmasraya - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Batanghari',
+      mountain: 'Dataran Rendah',
+      landmarks: 'Jembatan Kabel Lintas Sumatra'
+    },
+    'abai': {
+      region: 'Abai (Solok Selatan - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Sangir',
+      mountain: 'Kaki Gunung Kerinci Utara',
+      landmarks: 'Rumah Gadang 20 Ruang'
+    },
+    'muara-labuh': {
+      region: 'Muara Labuh (Solok Selatan - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Batang Suliti',
+      mountain: 'Lembah Perbukitan',
+      landmarks: 'Kawasan Seribu Rumah Gadang'
+    },
+    'indrapura': {
+      region: 'Indrapura (Pesisir Selatan - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Indrapura',
+      mountain: 'Dataran Pesisir Pantai Barat',
+      landmarks: 'Sejarah Kesultanan Indrapura'
+    },
+    'tapan': {
+      region: 'Tapan (Pesisir Selatan - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Batang Tapan',
+      mountain: 'Kaki Perbukitan TNKS',
+      landmarks: 'Jalur Penghubung Jambi - Sumbar Pesisir'
+    },
+    'lubukpinang': {
+      region: 'Lubukpinang (Mukomuko - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Manjunto',
+      mountain: 'Dataran Rendah Pesisir',
+      landmarks: 'Bendungan Irigasi Manjunto'
+    },
+    'mukomuko': {
+      region: 'Mukomuko (Bengkulu - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Mukomuko',
+      mountain: 'Pesisir Samudra Hindia',
+      landmarks: 'Benteng Anna (Fort Anna)'
+    },
+    'keluang': {
+      region: 'Keluang (Musi Banyuasin - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Batanghari Leko',
+      mountain: 'Dataran Rendah Perkebunan',
+      landmarks: 'Kawasan Perkebunan Sawit & Pertambangan'
+    },
+    'letang': {
+      region: 'Letang (Musi Banyuasin - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Anak Sungai Musi',
+      mountain: 'Dataran Aluvial',
+      landmarks: 'Wilayah Perbatasan Selatan'
+    },
+    'babat': {
+      region: 'Babat (Babat Toman - Perbatasan)[cite: 6]',
+      category: 'Wilayah Perbatasan',
+      river: 'Sungai Musi',
+      mountain: 'Dataran Perkebunan',
+      landmarks: 'Jalur Lintas Tengah Sumatra'
+    }
+  };
+
+  function displayRegionInfo(regionId) {
+    const info = jambiSubMapInfo[regionId];
+    if (info) {
+      alert(`Kategori: ${info.category}\nWilayah: ${info.region}\nPerairan/Sungai: ${info.river}\nBentang Alam: ${info.mountain}\nLandmark/Keunggulan: ${info.landmarks}`);
+    } else {
+      alert('Informasi sub-daerah belum tersedia.');
+    }
+  }
+
+  document.querySelectorAll('area').forEach(area => {
+    area.addEventListener('click', function() {
+      const regionId = this.id;
+      displayRegionInfo(regionId);
+    });
+  });
+
+  const discoverLocationButton = document.getElementById('discoverLocation');
+  discoverLocationButton.addEventListener('click', () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        
+        let detectedId = 'jambi-kota';
+        if (longitude < 101.8) {
+          detectedId = 'sungai-penuh';
+        } else if (longitude >= 101.8 && longitude < 102.8) {
+          detectedId = 'bangko';
+        } else if (longitude >= 102.8 && longitude < 103.3) {
+          detectedId = 'muara-bulian';
+        } else if (latitude > -1.0) {
+          detectedId = 'kuala-tungkal';
+        }
+        
+        displayRegionInfo(detectedId);
+      }, (error) => {
+        alert("Gagal mendeteksi lokasi: " + error.message);
+      });
+    } else {
+      alert("Fitur geolokasi tidak didukung oleh browser Anda.");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

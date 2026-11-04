@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Situs resmi Mighfar Suganda, penyanyi dan songwriter Indonesia, menampilkan karya terbaru, jadwal tur, serta konten eksklusif.">
+    <title>Mighfar Suganda: Official Website</title>
+</head>
+<body>
+
+<h1>Welcome to Mighfar Suganda Official</h1>
+<p>Halo! Saya Mighfar Suganda, seorang songwriter dan musisi yang menuangkan cerita, emosi, dan melodi autentik ke dalam setiap karya. Selamat datang di ruang musik saya[cite: 9].</p>
+
+<img src="gambar mighfar suganda.jpg" alt="Mighfar Suganda Songwriter" width="400">
+
+<h2>Listen to Our Latest Tracks</h2>
+<p>Dengarkan rilisan terbaru saya, <strong>"Anti ∞ Hero"</strong>:</p>
+<!-- Pemutar audio dengan direct link .mp3 -->
+<audio controls>
+    <source src="https://mp3tourl.com/audio/1793809780523-968f4606-f225-4402-91c6-d82b77e15470.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+</audio>
+
+<h2>Watch Our Performances</h2>
+<p>Tonton video musik resmi "Anti ∞ Hero":</p>
+<!-- Pemutar video dengan direct link .mp4 lengkap dengan kontrol suara -->
+<video controls width="500">
+    <source src="https://videotourl.com/videos/1793809887079-ecc7ddec-b5d8-4dab-a59a-bd603e79cf59.mp4" type="video/mp4">
+    Browser Anda tidak mendukung elemen video.
+</video>
+
+<h2>Upcoming Tour Dates</h2>
+<ul>
+    <li>June 15, 2026, Jakarta, Indonesia - <a href="https://example.com/purchase-tickets-mighfar-jkt" target="_blank">Get Tickets</a>[cite: 9]</li>
+    <li>June 20, 2026, Yogyakarta, Indonesia - <a href="https://example.com/purchase-tickets-mighfar-yogya" target="_blank">Get Tickets</a>[cite: 9]</li>
+</ul>
+
+<h2>Follow Us</h2>
+<p>Tetap terhubung melalui media sosial resmi:</p>
+<a href="https://www.instagram.com" target="_blank">Instagram</a><br>
+<a href="https://www.youtube.com/@mighfarsuganda" target="_blank">YouTube</a><br>
+<a href="https://www.twitter.com" target="_blank">Twitter / X</a>
+
+<h2>Contact Us</h2>
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="subject">Subject:</label><br>
+    <input type="text" id="subject" name="subject"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br>
+    <input type="submit" value="Send">
+</form>
+
+</body>
+</html>

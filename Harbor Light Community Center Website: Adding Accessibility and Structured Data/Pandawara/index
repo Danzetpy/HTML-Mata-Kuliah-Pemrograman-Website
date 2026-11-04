@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pandawara Group - Aksi Bersih Pantai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+        }
+        header {
+            background-color: #111; /* Disesuaikan dengan nuansa hitam khas logo Pandawara */
+            color: white;
+            padding: 20px 0;
+        }
+        .center-and-space-content {
+            text-align: center;
+            padding: 10px;
+        }
+        nav[role="navigation"] {
+            background-color: #222;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+        footer {
+            text-align: center;
+            background-color: #111;
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #a5d6a7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="center-and-space-content">
+            <!-- Logo diganti dengan file gambar logo Pandawara -->
+            <img src="pandawara.jpg" alt="Logo Pandawara Group" width="120" style="border-radius: 8px;">
+            <h1>Pandawara Group</h1>
+            <p>Bersama Melawan Sampah Plastik demi Lingkungan Indonesia yang Bersih</p>
+        </div>
+    </header>
+    
+    <nav role="navigation">
+        <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#services">Aksi & Program</a></li>
+            <li><a href="#events">Event</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner dekoratif -->
+    <div class="banner" style="text-align: center; background: #e8f5e9; padding: 10px;">
+        <img src="https://edube.org/uploads/media/default/0001/04/decorative-banner.jpg" alt="" aria-hidden="true" style="max-width: 100%; height: auto;">
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>Tentang Kami</h2>
+            <p>Pandawara Group adalah sekelompok pemuda yang mendedikasikan diri untuk membersihkan lingkungan perairan, sungai, dan pesisir pantai dari tumpukan sampah plastik demi mengembalikan keindahan alam Indonesia.</p>
+            <p style="text-align: center;"><img src="https://edube.org/uploads/media/default/0001/04/community-center.jpg" alt="Aksi Pembersihan Pandawara" style="max-width: 100%; border-radius: 5px;"></p>
+        </section>
+
+        <section id="services">
+            <h2>Aksi & Layanan Kami</h2>
+            <p>Dari edukasi pengelolaan sampah mandiri, gotong royong pembersihan sungai perkotaan, hingga kampanye masif aksi bersih-bersih pantai, seluruh program kami dirancang untuk membangkitkan kesadaran masyarakat luas.</p>
+        </section>
+
+        <section id="events" itemscope itemtype="http://schema.org/Event">
+            <h2>Gabung Aksi Kami</h2>
+            <p itemprop="description">Jadilah bagian dari gerakan perubahan! Mari turun tangan langsung bersama ribuan relawan lainnya dalam agenda tahunan pembersihan garis pantai serentak.</p>
+            <p><strong>Aksi Tahunan Bersih Pantai Nasional:</strong> <br>
+               Waktu Pelaksanaan: <time itemprop="startDate" datetime="2026-05-16">16 Mei 2026</time>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h2 id="contact" style="color: white; margin-top: 0;">Kontak Kami</h2>
+        <p>Ingin berkolaborasi atau ikut serta menjadi relawan? Email kami di <a href="mailto:info@pandawaragroup.com">info@pandawaragroup.com</a>.</p>
+        <p>&copy; 2026 Pandawara Group. All rights reserved.</p>
+    </footer>
+</body>
+</html>

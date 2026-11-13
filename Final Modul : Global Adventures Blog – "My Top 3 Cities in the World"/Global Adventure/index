@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Adventures Blog</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Hanya halaman yang aktif yang ditampilkan */
+        .page { display: none; }
+        .page.active { display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- ================= NAVIGASI ================= -->
+    <nav>
+        <ul>
+            <li><a href="#home" data-page="home">Home</a></li>
+            <li>
+                <a href="#tokyo" data-page="tokyo">Cities</a>
+                <ul>
+                    <li><a href="#tokyo" data-page="tokyo">Tokyo 🇯🇵</a></li>
+                    <li><a href="#paris" data-page="paris">Paris 🇫🇷</a></li>
+                    <li><a href="#yogyakarta" data-page="yogyakarta">Yogyakarta 🇮🇩</a></li>
+                </ul>
+            </li>
+            <li><a href="#gallery" data-page="gallery">Gallery</a></li>
+            <li><a href="#contact" data-page="contact">Contact</a></li>
+            <li><a href="#subscribe" data-page="subscribe">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= HALAMAN HOME ================= -->
+    <div class="page active" id="home">
+        <header>
+            <h1>Journeys of Friendship: Exploring the World Together 🌍</h1>
+            <p>Traveling with friends turns every street into a story. Join us as we revisit the three cities that stole our hearts and invite you to the adventures still waiting ahead.</p>
+        </header>
+
+        <main>
+            <section class="slideshow">
+                <h2>Our Top 3 Cities</h2>
+                <figure>
+                    <img src="shibuya.jpg" alt="Shibuya crossing at night in Tokyo">
+                    <figcaption>Tokyo: neon lights and endless energy at Shibuya Crossing 🗼</figcaption>
+                </figure>
+                <figure>
+                    <img src="eiffel.webp" alt="Eiffel Tower seen from the Seine river in Paris">
+                    <figcaption>Paris: a late-night walk along the Seine with good friends 🥐</figcaption>
+                </figure>
+                <figure>
+                    <img src="borobudur.jpeg" alt="Borobudur temple at sunrise near Yogyakarta">
+                    <figcaption>Yogyakarta: sunrise at Borobudur and warm gudeg dinners 🛕</figcaption>
+                </figure>
+            </section>
+        </main>
+    </div>
+
+    <!-- ================= HALAMAN TOKYO ================= -->
+    <div class="page" id="tokyo">
+        <header>
+            <h1>Tokyo, Japan 🇯🇵</h1>
+            <p>Tokyo was the city where our group first realized that getting lost on purpose can be the best part of a trip. Every alley hid a ramen shop, a vending machine, or a shrine we had never heard of.</p>
+        </header>
+
+        <main>
+            <section id="landmarks">
+                <h2>Landmarks 🗼</h2>
+                <figure>
+                    <img src="shibuya.jpg" alt="Shibuya Crossing at night">
+                    <figcaption>Shibuya Crossing at night, when the whole street seems to move at once.</figcaption>
+                </figure>
+                <p>We spent one evening at Senso-ji in Asakusa, then took the train to Shinjuku to watch the city lights from the observation deck.</p>
+            </section>
+
+            <section id="culinary">
+                <h2>Culinary Delights 🍜</h2>
+                <p>Our favorite discovery was a tiny ramen counter with only eight seats. The chef nodded at us and served a bowl that none of us will ever forget.</p>
+            </section>
+
+            <section id="culture">
+                <h2>Cultural Experiences 🎌</h2>
+                <p>We joined a tea ceremony in Kyoto, a short trip from Tokyo, and learned how every movement carries meaning.</p>
+            </section>
+
+            <section id="virtual-tour">
+                <h2>Virtual Tour 🎥</h2>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Walking tour of Tokyo"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <section id="reflections">
+                <h2>Personal Reflections 💭</h2>
+                <p>Tokyo taught us that a city can be busy and calm at the same time. It is the place we still talk about first when we meet.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- ================= HALAMAN PARIS ================= -->
+    <div class="page" id="paris">
+        <header>
+            <h1>Paris, France 🇫🇷</h1>
+            <p>Paris was the city where our group learned to slow down. We stopped rushing between landmarks and started spending whole afternoons in cafés, watching the city go by.</p>
+        </header>
+
+        <main>
+            <section id="landmarks-paris">
+                <h2>Landmarks 🗼</h2>
+                <figure>
+                    <img src="eiffel.webp" alt="Eiffel Tower seen from the Seine river">
+                    <figcaption>The Eiffel Tower glowing over the Seine, seen from our evening walk.</figcaption>
+                </figure>
+                <p>We climbed up to Montmartre to see Sacré-Cœur at sunset, then walked back down through the narrow streets toward the river.</p>
+            </section>
+
+            <section id="culinary-paris">
+                <h2>Culinary Delights 🥐</h2>
+                <p>Every morning started with a fresh croissant and a small cup of strong coffee at a corner bakery. In the evening we shared a plate of cheese and bread by the Seine, which became our favorite ritual.</p>
+            </section>
+
+            <section id="culture-paris">
+                <h2>Cultural Experiences 🎨</h2>
+                <p>We spent a rainy afternoon at the Louvre and another at a small gallery in Le Marais. Both made us appreciate how art lives in everyday street corners as much as in museums.</p>
+            </section>
+
+            <section id="virtual-tour-paris">
+                <h2>Virtual Tour 🎥</h2>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Walking tour of Paris"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <section id="reflections-paris">
+                <h2>Personal Reflections 💭</h2>
+                <p>Paris reminded us that a trip does not have to be packed with plans to be unforgettable. Some of our best memories came from doing nothing at all, together.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- ================= HALAMAN YOGYAKARTA ================= -->
+    <div class="page" id="yogyakarta">
+        <header>
+            <h1>Yogyakarta, Indonesia 🇮🇩</h1>
+            <p>Yogyakarta was the city that felt most like home. Its warm people, its art, and its slow mornings made us feel welcome from the moment we arrived.</p>
+        </header>
+
+        <main>
+            <section id="landmarks-yogya">
+                <h2>Landmarks 🛕</h2>
+                <figure>
+                    <img src="borobudur.jpeg" alt="Borobudur temple at sunrise">
+                    <figcaption>Borobudur at sunrise, when the stone temple slowly turns golden.</figcaption>
+                </figure>
+                <p>We also visited the Keraton, the royal palace in the city center, and walked through Taman Sari, the old water castle with its hidden pools and passageways.</p>
+            </section>
+
+            <section id="culinary-yogya">
+                <h2>Culinary Delights 🍛</h2>
+                <p>Our favorite meal was gudeg, sweet jackfruit cooked slowly with coconut milk and eaten with rice and egg. We also loved sate klatak and a warm cup of wedang uwuh in the evening.</p>
+            </section>
+
+            <section id="culture-yogya">
+                <h2>Cultural Experiences 🎭</h2>
+                <p>We watched a wayang kulit shadow puppet performance late into the night and tried batik painting in a small studio. Each experience showed us how much patience and story live in Javanese art.</p>
+            </section>
+
+            <section id="virtual-tour-yogya">
+                <h2>Virtual Tour 🎥</h2>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="Walking tour of Yogyakarta"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <section id="reflections-yogya">
+                <h2>Personal Reflections 💭</h2>
+                <p>Yogyakarta taught us that hospitality can be the most memorable part of a trip. Long after the temples faded from view, we remembered the friendly faces who made us feel at home.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- ================= HALAMAN GALLERY ================= -->
+    <div class="page" id="gallery">
+        <header>
+            <h1>Travel Gallery 📸</h1>
+            <p>Take a look at the moments we captured along the way. Every photo has a story behind it.</p>
+        </header>
+
+        <main>
+            <section class="photo-gallery">
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="shibuya.jpg" alt="Shibuya Crossing at night">
+                            <figcaption>We almost missed the last train because we could not stop taking photos here. 🌃</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="eiffel.webp" alt="Eiffel Tower from the Seine">
+                            <figcaption>Our Paris night walk, when nobody wanted to go back to the hotel. 🥐</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="borobudur.jpeg" alt="Borobudur at sunrise">
+                            <figcaption>Sunrise at Borobudur, with cold hands and warm hearts. 🛕</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- ================= HALAMAN CONTACT ================= -->
+    <div class="page" id="contact">
+        <header>
+            <h1>Contact Us ✉️</h1>
+            <p>Share your own travel stories, ask a question, or tell us where we should go next.</p>
+        </header>
+
+        <main>
+            <form method="post" action="#">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- ================= HALAMAN SUBSCRIBE ================= -->
+    <div class="page" id="subscribe">
+        <header>
+            <h1>Join Our Journey 📬</h1>
+            <p>Get new stories and travel tips delivered straight to your inbox.</p>
+        </header>
+
+        <main>
+            <form method="post" action="#">
+                <div>
+                    <label for="sub-email">Email address:</label>
+                    <input type="email" id="sub-email" name="email"
+                           placeholder="Enter your email address" required>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to receive newsletter emails from Global Adventures Blog.</label>
+                </div>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div class="social-links">
+            <a href="#" aria-label="Follow us on Faceblock">Faceblock</a>
+            <a href="#" aria-label="Follow us on Tweety">Tweety</a>
+            <a href="#" aria-label="Follow us on Instadrama">Instadrama</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: hello@globaladventures.com</p>
+            <p><a href="#contact" data-page="contact">Contact Form</a></p>
+        </div>
+        <p>&copy; 2035 Global Adventures Blog</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT (fungsi pindah halaman) ================= -->
+    <script>
+        const pages = document.querySelectorAll('.page');
+        const links = document.querySelectorAll('[data-page]');
+
+        function showPage(id) {
+            pages.forEach(page => page.classList.toggle('active', page.id === id));
+            window.scrollTo(0, 0);
+        }
+
+        links.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const target = link.dataset.page;
+                showPage(target);
+                history.replaceState(null, '', '#' + target);
+            });
+        });
+
+        // Buka halaman sesuai hash di URL (misalnya index.html#paris)
+        const initial = location.hash.replace('#', '');
+        if (initial && document.getElementById(initial)?.classList.contains('page')) {
+            showPage(initial);
+        }
+    </script>
+
+</body>
+</html>
